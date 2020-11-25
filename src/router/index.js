@@ -1,6 +1,15 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Home from '../views/Home.vue'
+import About from '../views/About.vue'
+import Rooms from '../views/Rooms.vue'
+import Facilities from '../views/Facilities.vue'
+import Contact from '../views/Contact.vue'
+import Booking from '../views/Booking.vue'
+import SeeMoreButton from '../views/SeeMoreButton.vue'
+import Services from '../views/Services.vue'
+
+
 
 Vue.use(VueRouter)
 
@@ -17,7 +26,39 @@ Vue.use(VueRouter)
     // this generates a separate chunk (about.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
     component: () => import(/* webpackChunkName: "about" */ '../views/About.vue')
-  }
+  },
+  { path: '/Rooms',
+    name: 'Rooms',
+    component: Rooms
+  },
+  {
+    path: '/Facilities',
+    name:  'Facilities',
+    component: Facilities
+  },
+  {
+    path: '/Contact',
+    name: 'Contact',
+    component: Contact
+  },
+  {
+    path: '/Booking',
+    name: 'Booking',
+    component: Booking
+  },
+  {
+    path: '/SeeMoreButton',
+    name: 'SeeMoreButton',
+    component: SeeMoreButton
+  },
+  {
+    path: '/Services',
+    name: 'Services',
+    component: Services
+  },
+  
+    
+ 
 ]
 
 const router = new VueRouter({
