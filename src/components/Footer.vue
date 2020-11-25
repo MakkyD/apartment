@@ -24,7 +24,7 @@
                     <p>Privacy Policy</p>
                 </div>
                 <div style="margin-top:40px">
-                    <h2> Contact</h2>
+                    <h2> Contact Us</h2>
                     <p>amakaibiam@gmail.com</p>
                     <p>+2348140159223</p>
                     <p>Lagos, Nigeria</p>
